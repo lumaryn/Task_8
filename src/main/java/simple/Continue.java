@@ -26,6 +26,7 @@ public class Continue extends Operation {
     }
 
     public char getCont() {
+
         return cont;
     }
 }

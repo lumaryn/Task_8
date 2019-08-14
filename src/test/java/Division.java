@@ -1,5 +1,6 @@
-import org.junit.*;
-import simple.*;
+import org.junit.Assert;
+import org.junit.Test;
+import simple.Div;
 
 public class Division {
 

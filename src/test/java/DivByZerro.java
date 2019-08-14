@@ -1,13 +1,13 @@
 import org.junit.*;
 import simple.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class DivByZerro {
 
     @Test
-    public void DivByZerro(){
+    public void DivZero()  {
 
         Div a = new Div();
-
-        Assert.assertEquals("Some problem in 'Div' function", a.getA(0,0),0);
+        assertThrows(ArithmeticException.class, () -> a.getA(0, 0));
     }
 }

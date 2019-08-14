@@ -8,7 +8,7 @@ public class Operation {
     Scanner sc = new Scanner(System.in);
 
     public void setCh() {
-        try {
+        try{
             System.out.println("Укажите операцию: + or - or / or *");
             while ((ch != '+') & (ch != '-') & (ch != '/') & (ch != '*')) {
                 this.ch = sc.next().charAt(0);
@@ -26,7 +26,7 @@ public class Operation {
 
     public int getResult(int i, int y)
     {
-        try {
+
             if (ch == '+') {
                 Add add = new Add();
                 int a = add.getA(i, y);
@@ -47,11 +47,7 @@ public class Operation {
             } else {
                 System.out.println("Произошла неведомая ошибка");
             }
-        }
-        catch (Exception e)
-        {
-            System.out.println(e);
-        }
+
         return a;
     }
 }
